@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Player Registration</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Register as a Football Player</h1>
+    <form method="POST" action="/register">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required><br>
+
+        <label for="position">Position:</label>
+        <input type="text" id="position" name="position" required><br>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
